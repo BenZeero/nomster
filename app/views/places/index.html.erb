@@ -19,6 +19,15 @@
         </blockquote>
       </div>
     <% end %>
+
+    <% if place.photos.present? %>
+      <div class="col-12">
+        <blockquote>
+          <img src="<%= place.photos.last.picture %>" class="img-fluid img-thumbnail">
+          <%= place.photos.last.caption %>
+        </blockquote>
+      </div>
+    <% end %>
   </div>
 
 <% end %>
