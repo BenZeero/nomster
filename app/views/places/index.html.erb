@@ -51,9 +51,9 @@
     <% end %>
 
     <% if place.photos.present? %>
-      <div class="pic_size col-12">
+      <div class="col-12 col-sm-6">
         <blockquote>
-          <img src="<%= place.photos.last.picture %>" class="img-fluid img-thumbnail">
+          <img src="<%= place.photos.last.picture %>" class="img-fluid img-thumbnail" >
           <%= place.photos.last.caption %>
         </blockquote>
       </div>
