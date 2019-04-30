@@ -140,7 +140,7 @@
   <div class="clear"></div>
   <div class="row">
     <% @place.photos.each do |photo| %>
-      <div class="col-12 col-sm-6">
+      <div class="pic_size col-12 col-sm-6">
         <blockquote>  
           <img src="<%= photo.picture.url %>" class="img-fluid img-thumbnail">
           <%= photo.caption %>
